@@ -44,11 +44,8 @@
                 unset($price);
                 unset($id);
                 mysqli_close($link);
-                ?>
-                <div class="container">
-                    <h2>Изменено</h2>
-                </div>
-                <?php
+                header("Location: /fit/alltraining.php");
+                exit;
             }
         ?>
 
